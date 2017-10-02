@@ -14,7 +14,7 @@
     "dev:unit": "nodemon --exec 'npm run test/unit'",
     "test:e2e": "mocha tests/e2e",
     "dev:e2d": "nodemon --exec 'npm run test/e2e'",
-    "start": "nodemon server.js"
+    "start": "node /lib/app.js"
   },
   "repository": {
     "type": "git",
@@ -31,7 +31,7 @@
     "chai": "^4.1.0",
     "chai-http": "^3.0.0",
     "eslint": "^4.3.0",
-    "express": "^4.15.3",
+    "hapi": "^16.6.2",
     "mocha": "^3.4.2",
     "mongoose": "^4.11.4",
     "morgan": "^1.8.2",

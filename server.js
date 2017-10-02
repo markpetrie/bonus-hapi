@@ -1,14 +1,29 @@
-const http = require('http');
+// const http = require('http');
+// require('dotenv').config();
+// const app = require('./lib/app');
+// const connect = require('./lib/connect');
+// connect(process.env.MONGODB_URI);
+// // const server = new Hapi.Server();
+// // server.connection({ port: 3000 });
+// // server.app.key = 'spongebob';
+// const server = http.createServer(app);
+// const port = process.env.PORT || 3001;
 
-require('./lib/connect');
+// server.listen(3000, () => {
+//     console.log('server is running on', server.address().port); //eslint-disable-line
+// });
 
-const app = require('./lib/app');
 
-const server = http.createServer(app);
+// const server = new Hapi.Server();
+// server.connection({ port: 3000 });
+// server.app.key = 'spongebob';
 
-const port = 3000;
+// // require('./lib/connect');
 
-server.listen(port, () => {
-    console.log('server is up and running on', server.address().port);
+// server.start((err) => {
 
-});
+//     if (err) {
+//         throw err;
+//     }
+//     console.log(`Server running at: ${server.info.uri}`);
+// });
